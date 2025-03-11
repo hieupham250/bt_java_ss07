@@ -6,7 +6,7 @@ public class Bai2 {
         System.out.println("chuỗi ban đầu: " + sb.toString());
         sb.delete(5, 9);
         System.out.println("chuỗi sau khi xóa: " + sb.toString());
-        sb.replace(8,13 ,"Universe");
+        sb.replace(5,13 ," Universe");
         System.out.println("chuỗi sau khi thay thế: " + sb.toString());
     }
 }
