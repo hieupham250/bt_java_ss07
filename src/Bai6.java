@@ -8,14 +8,14 @@ public class Bai6 {
             str.concat(appendString);
         }
         endTime = System.currentTimeMillis();
-        System.out.println("String concatenation time: " + (endTime - startTime) + " ms");
+        System.out.println("Thời gian thực thi với String: " + (endTime - startTime) + " ms");
         startTime = System.currentTimeMillis();
         StringBuilder sb = new StringBuilder("Hello");
         for (int i = 1; i <= 1000000; i++) {
             sb.append(appendString);
         }
         endTime = System.currentTimeMillis();
-        System.out.println("StringBuilder concatenation time: " + (endTime - startTime) + " ms");
+        System.out.println("Thời gian thực thi với StringBuilder: " + (endTime - startTime) + " ms");
 
         startTime = System.currentTimeMillis();
         StringBuffer sbf = new StringBuffer("Hello");
@@ -23,6 +23,6 @@ public class Bai6 {
             sbf.append(appendString);
         }
         endTime = System.currentTimeMillis();
-        System.out.println("StringBuffer concatenation time: " + (endTime - startTime) + " ms");
+        System.out.println("Thời gian thực thi với StringBuffer: " + (endTime - startTime) + " ms");
     }
 }
